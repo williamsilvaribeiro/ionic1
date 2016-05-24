@@ -1,0 +1,16 @@
+<script id="templates/modulo/admin/tab.curso.html" type="text/ng-template">
+  <ion-view view-title="Reservas">
+    <ion-nav-buttons side="right">
+      <button class="button button-positive">
+        <button class="button button-icon ion-compose" ng-click="modal.show()"></button>
+      </button>
+    </ion-nav-buttons>
+    <ion-content>
+      <ion-list>
+        <ion-item ng-repeat="curso in cursos">
+          {{curso.nome}}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-view>
+</script>
